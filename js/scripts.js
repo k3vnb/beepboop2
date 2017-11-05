@@ -7,27 +7,23 @@ var seasonalCoffeeRange = function(input) {
     newArray.push(range);
     if (range == input) {
       newArray.forEach(function(item, index, array){
-        if (item > 0) {
-          if (item % 3 === 0) {
+
+          if ((item % 12 === 0) && (item > 0)) {
+            item = "latte";
+          };
+          if ((item % 3 === 0) && (item > 0)) {
             item = "pumpkin";
           };
+          if ((item % 4 === 0) && (item > 0)) {
+            item = "spice";
+          };
           superArray.push(item);
-        }
+
       }); return superArray;
     }
-    // var newArray2 = superArray.concat(newArray);
-    // reply = newArray2.concat(superArray);
   }
   };
 
-
-
-// var pumpkin = function(seasonalCoffeeRange) {
-//   var three = seasonalCoffeeRange.toString()
-//   var blip = Array.from(three);
-//
-//   if (seasonalCoffeeRange
-// }
 //end of Business Logic
 
 
