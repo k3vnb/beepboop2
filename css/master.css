@@ -1,0 +1,28 @@
+body {
+  font-family: monospace;
+}
+
+.headimg {
+  float: left;
+  max-width: 200px;
+}
+
+.cardimg {
+  float: right;
+  max-width: 200px;
+}
+
+.robot {
+  font-size: 20px;
+}
+
+.jumbotron {
+  text-align: center;
+  font-size: 100px;
+}
+
+.card {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+}
