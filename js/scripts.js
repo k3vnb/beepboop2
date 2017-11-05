@@ -1,4 +1,14 @@
 //Business End
+var seasonalCoffee = function(input) {
+  var reply;
+  var newArray = [];
+  var superArray = [];
+  for (var range = 0; range <= input; range++) {
+    newArray.push(range);
+    var newArray2 = superArray.concat(newArray);
+    reply = newArray2.concat(superArray);
+  } return reply
+}
 //end of Business Logic
 
 
@@ -10,7 +20,8 @@ $(document).ready(function() {
       if (isNaN(userInput)) {
         alert("please enter valid number");
       } else {
-    var finalAnswer = toBoop(userInput);
+    var finalAnswer = seasonalCoffee(userInput);
+    $("#result").empty();
     $(".card").show();
     $("#result").append(finalAnswer);
     }; //end of else statement
