@@ -1,14 +1,33 @@
 //Business End
-var seasonalCoffee = function(input) {
-  var reply;
+var seasonalCoffeeRange = function(input) {
+  var reply = [];
   var newArray = [];
   var superArray = [];
   for (var range = 0; range <= input; range++) {
     newArray.push(range);
-    var newArray2 = superArray.concat(newArray);
-    reply = newArray2.concat(superArray);
-  } return reply
-}
+    if (range == input) {
+      newArray.forEach(function(item, index, array){
+        if (item > 0) {
+          if (item % 3 === 0) {
+            item = "pumpkin";
+          };
+          superArray.push(item);
+        }
+      }); return superArray;
+    }
+    // var newArray2 = superArray.concat(newArray);
+    // reply = newArray2.concat(superArray);
+  }
+  };
+
+
+
+// var pumpkin = function(seasonalCoffeeRange) {
+//   var three = seasonalCoffeeRange.toString()
+//   var blip = Array.from(three);
+//
+//   if (seasonalCoffeeRange
+// }
 //end of Business Logic
 
 
@@ -20,7 +39,7 @@ $(document).ready(function() {
       if (isNaN(userInput)) {
         alert("please enter valid number");
       } else {
-    var finalAnswer = seasonalCoffee(userInput);
+    var finalAnswer = seasonalCoffeeRange(userInput);
     $("#result").empty();
     $(".card").show();
     $("#result").append(finalAnswer);
