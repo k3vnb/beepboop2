@@ -7,7 +7,7 @@ _
 
 ## Setup/Installation Requirements
 
-* _Go on to the page at https://lemurriot.github.io/beepboop/_
+* _Go on to the page at https://lemurriot.github.io/beepboop2/_
 
 
 ## Specifications
@@ -24,8 +24,9 @@ _
 * _It can take a user inputted number and return a list of numbers from 0 to the user inputted number, replacing any number that is a multiple of 12 with the word "latte"_
   * _Example Input: 12_
   * _Example Output: 012pumpkinspice5pumpkin7spicepumpkin1011latte_
-
-
+* _The program can recognize if the user does not input a numeric value and returns an alert_
+  * _Example Input: Hello_
+  * _Example Output: "Please enter a number"_
 
 
 
