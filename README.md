@@ -1,10 +1,11 @@
 # _BeepBoop2_
 
-#### _BeepBoop2 is a resubmission_
+#### _BeepBoop2 is a pumpkin spice latte themed version of Fizzbuzz_
 
 #### By _**Kevin Boyle**_
 _
-
+### Screenshot:
+![Fizzbuzz](img/fizzbuzz.png?raw=true)
 ## Setup/Installation Requirements
 
 * _Go on to the page at https://lemurriot.github.io/beepboop2/_
